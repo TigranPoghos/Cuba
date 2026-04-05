@@ -19,4 +19,17 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+    const anchor = document.querySelector('.filters__menu-anchor');
+    const filters = document.querySelector('.filters');
+
+    if (anchor && filters) {
+    const observer = new IntersectionObserver(([entry]) => {
+        filters.classList.toggle('is-stuck', !entry.isIntersecting);
+    });
+
+    observer.observe(anchor);
+    }
+
+
 })

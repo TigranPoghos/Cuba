@@ -226,11 +226,23 @@ body.hidden {
   white-space: nowrap;
 }
 
+.filters {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  transition: background 0.25s ease, backdrop-filter 0.25s ease, box-shadow 0.25s ease;
+}
 .filters__buttons {
   display: flex;
   align-items: center;
   gap: 24px;
   margin-right: 38px;
+  flex-shrink: 0;
+}
+.filters.is-stuck {
+  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.4);
+  padding: 24px;
 }
 .filters__menu {
   display: flex;
@@ -385,7 +397,7 @@ body.hidden {
 }
 .menu {
   margin-bottom: 80px;
-  scroll-margin-top: 60px;
+  scroll-margin-top: 100px;
 }
 .menu__row {
   flex-direction: column;
