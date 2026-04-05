@@ -278,50 +278,14 @@ body {
     white-space: nowrap;
 }
 
-.js-filters-scroll {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  white-space: nowrap;
-}
 
-.js-filters-scroll::-webkit-scrollbar {
-  display: none;
-}
 
-.js-filters-scroll li {
-  flex-shrink: 0;
-}
 
-.js-filters-controls {
-  display: none;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
-.js-filters-controls.is-visible {
-  display: flex;
-}
-
-.js-filters-prev,
-.js-filters-next {
-  cursor: pointer;
-}
 
 .js-filters-prev:disabled,
 .js-filters-next:disabled {
-  opacity: 0.35;
-  pointer-events: none;
-}
-
-.js-filters-link.is-active {
-  color: #fff;
-  background: #131B2D;
-  border-radius: 999px;
-  padding: 10px 16px;
+    opacity: 0.35;
+    pointer-events: none;
 }
 
 .filters {
@@ -358,6 +322,15 @@ body {
         display: flex;
         align-items: center;
         gap: 10px;
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
 
         &-item {
             font-family: var(--second-family);
