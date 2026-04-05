@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пицца Куба</title>
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__row row">
+                    <ul class="header__top-menu">
+                        <li><a href="#" class="text">Меню</a></li>
+                        <li><a href="#" class="text">Акции</a></li>
+                        <li><a href="#" class="text">Контакты и доставка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__line"></div>
+        <div class="header__bottom">
+            <img class="header__leaf" src="assets/image/header__svg.png" alt="">
+            <div class="container">
+                <div class="header__row row">
+                    <a href="#" class="header__logo">
+                        <img src="assets/image/logo.png" alt="">
+                    </a>
+                    <div class="header__about">
+                        <div class="header__about-circle">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 8.55556V18H27.4444M18 35C8.61116 35 1 27.3888 1 18C1 8.61116 8.61116 1 18 1C27.3888 1 35 8.61116 35 18C35 27.3888 27.3888 35 18 35Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="header__about-text">
+                            <span class="header__about-title">сегодня работаем</span>
+                            <span class="header__about-subtitle">C 10:00 до 00:00</span>
+                        </div>
+                    </div>
+                    <div class="header__about">
+                        <div class="header__about-circle">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.66995 2.67629C9.26498 1.66387 8.28442 1 7.19401 1H3.52632C2.13107 1 1 2.1308 1 3.52604C1 15.3856 10.6144 25 22.474 25C23.8692 25 25 23.8688 25 22.4736L25.0006 18.8053C25.0006 17.7149 24.3369 16.7345 23.3245 16.3295L19.8092 14.9239C18.8998 14.5601 17.8644 14.7239 17.1119 15.3509L16.2047 16.1076C15.1452 16.9905 13.5862 16.9203 12.6109 15.945L10.0563 13.3881C9.08105 12.4128 9.00898 10.8551 9.89193 9.79558L10.6484 8.8884C11.2755 8.13594 11.4407 7.10021 11.0769 6.19079L9.66995 2.67629Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="header__about-text">
+                            <span class="header__about-title">Доставка еды <span style="font-weight: 400;">Курск</span></span>
+                            <a class="header__about-subtitle" href="tel:550015">55-00-15</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="hidden-text">Доставка пиццы и роллов в Курске</h1>
+        <section class="filters">
+            <div class="container">
+                <div class="filters__row row">
+                    <div class="filter__menu-anchor"></div>
+                    <div class="filters__buttons">
+                        <div class="filters__search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.75 12.75L18.75 18.75M7.75 14.75C3.88401 14.75 0.75 11.616 0.75 7.75C0.75 3.88401 3.88401 0.75 7.75 0.75C11.616 0.75 14.75 3.88401 14.75 7.75C14.75 11.616 11.616 14.75 7.75 14.75Z" stroke="#131B2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="filters__sort">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.46429 14.8929L4.60714 18.75M4.60714 18.75L0.75 14.8929M4.60714 18.75V0.75M11.0357 4.60714L14.8929 0.75M14.8929 0.75L18.75 4.60714M14.8929 0.75V18.75" stroke="#131B2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="filters__menu">
+                        <li><a href="#pizza" class="filters__menu-item">Пицца</a></li>
+                        <li><a href="#roll" class="filters__menu-item">Роллы</a></li>
+                        <li><a href="#set" class="filters__menu-item">Сеты</a></li>
+                        <li><a href="#pasta" class="filters__menu-item">Лапша</a></li>
+                        <li><a href="#snack" class="filters__menu-item">Закуски</a></li>
+                        <li><a href="#salad" class="filters__menu-item">Салаты</a></li>
+                        <li><a href="#dessert" class="filters__menu-item">Десерты</a></li>
+                        <li><a href="#drink" class="filters__menu-item">Напитки</a></li>
+                    </ul>
+                    <div class="filters__basket">
+                        <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 20C15.8954 20 15 20.8954 15 22C15 23.1046 15.8954 24 17 24C18.1046 24 19 23.1046 19 22C19 20.8954 18.1046 20 17 20ZM17 20H9.29395C8.83288 20 8.60193 20 8.41211 19.918C8.24466 19.8456 8.09938 19.7291 7.99354 19.5805C7.8749 19.414 7.82719 19.1913 7.73274 18.7505L5.27148 7.26465C5.17484 6.81363 5.12587 6.58838 5.00586 6.41992C4.90002 6.27135 4.75477 6.15441 4.58732 6.08205C4.39746 6 4.16779 6 3.70653 6H3M6 9H18.8732C19.595 9 19.9555 9 20.1978 9.15036C20.41 9.28206 20.5653 9.48862 20.633 9.729C20.7104 10.0034 20.611 10.35 20.411 11.0435L19.0264 15.8435C18.9068 16.2581 18.8469 16.465 18.7256 16.6189C18.6185 16.7547 18.4772 16.861 18.317 16.9263C18.1361 17 17.9211 17 17.4921 17H7.73047M8 24C6.89543 24 6 23.1046 6 22C6 20.8954 6.89543 20 8 20C9.10457 20 10 20.8954 10 22C10 23.1046 9.10457 24 8 24Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div class="filters__basket-line"></div>
+                        <div class="filters__basket-price">1000₽</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="often">
+            <div class="container">
+                <div class="often__row row">
+                    <div class="often__title">
+                        <h2 class="title">Часто заказываю</h2>
+                        <div class="often__title-line"></div>
+                    </div>
+                    <div class="often__block">
+                        <button class="often__item">
+                            <img src="assets/image/test.png" alt="">
+                            <div class="often__item-about">
+                                <p class="text">Пицца Бельямар</p>
+                                <p class="text">от 1999₽</p>
+                            </div>
+                        </button>
+                        <button class="often__item">
+                            <img src="assets/image/test.png" alt="">
+                            <div class="often__item-about">
+                                <p class="text">Пицца Бельямар</p>
+                                <p class="text">от 1999₽</p>
+                            </div>
+                        </button>
+                        <button class="often__item">
+                            <img src="assets/image/test.png" alt="">
+                            <div class="often__item-about">
+                                <p class="text">Пицца Бельямар</p>
+                                <p class="text">от 1999₽</p>
+                            </div>
+                        </button>
+                        <button class="often__item">
+                            <img src="assets/image/test.png" alt="">
+                            <div class="often__item-about">
+                                <p class="text">Пицца Бельямар</p>
+                                <p class="text">от 1999₽</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo">
+            <div class="promo__row row promo__slider">
+                <div class="promo__track">
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">3 средние пиццы по цене 2</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">Скидка на день рождение 10%</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">3 пиццы 25см по цене 2</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">Скидка 10% при заказе через сайт</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">Скидка на самовывоз 20%</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">3 средние пиццы по цене 2</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">Скидка на день рождение 10%</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">3 пиццы 25см по цене 2</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">Скидка 10% при заказе через сайт</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                    <div class="promo__item">
+                        <div class="promo__item-about">
+                            <h3 class="title">Скидка на самовывоз 20%</h3>
+                            <p class="text">3 средние пиццы по цене 2 выберите на ваш вкус</p>
+                            <a href="#" class="promo__item-button"><span class="text">Подробнее</span></a>
+                        </div>
+                        <div class="promo__item-img">
+                            <img src="assets/image/test.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="menu" id="pizza">
+            <div class="container">
+                <div class="menu__row row">
+                    <div class="menu__title">
+                        <h2 class="title">Пицца</h2>
+                        <div class="menu__title-line"></div>
+                        <div class="swiper-btn">
+                            <button class="swiper-btn-prev">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.5L8.16667 15.5M1.5 8.5L8.16667 1.5M1.5 8.5H25.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-btn-next">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.5 8.5L18.8333 1.5M25.5 8.5L18.8333 15.5M25.5 8.5H1.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza/zhulen.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Жульен</h3>
+                                <p class="text">Жареные шампиньоны, жареный лук, копченое куриное филе, сливочный соус, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 480₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza/amore.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Аморе</h3>
+                                <p class="text">Кальмар, кунжут, лосось, окунь, соус терияки, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 777₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza/varadero.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Варадеро</h3>
+                                <p class="text">Кетчуп, маринованный лук, маринованный огурчик, помидоры, соус горчичный, сыр моцарелла, фарш.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 480₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza/chegevara.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Че Гевара</h3>
+                                <p class="text">Куриное филе, помидоры, свинина, соус пикантный, сыр моцарелла, шампиньоны.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 480₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza/partizan-01.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Партизан</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 580₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza/anarhija.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Ананасы, ветчина, куриное филе, маслины, соус кисло-сладкий, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 550₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu menu-50" id="pizza-50">
+            <div class="container">
+                <div class="menu__row row">
+                    <div class="menu__title">
+                        <h2 class="title">Пицца 50/50</h2>
+                        <div class="menu__title-line"></div>
+                        <div class="swiper-btn">
+                            <button class="swiper-btn-prev">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.5L8.16667 15.5M1.5 8.5L8.16667 1.5M1.5 8.5H25.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-btn-next">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.5 8.5L18.8333 1.5M25.5 8.5L18.8333 15.5M25.5 8.5H1.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza-50/don-becon.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Дон-Бекон</h3>
+                                <p class="text"><b>Амигос:</b> Куриное филе, ананасы, ветчина, маслины, соус неаполитано, сыр моцарелла <br> <b>Че Гевара:</b>  Куриное филе, колбаски кабаносси, ветчина, соус белый, шампиньоны, помидоры, сыр моцарелла</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 999₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza-50/kapriz.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Каприз</h3>
+                                <p class="text"><b>Анархия:</b> Куриное филе, ананасы, ветчина, маслины, соус неаполитано, сыр моцарелла <br> <b>Революция:</b>  Куриное филе, колбаски кабаносси, ветчина, соус белый, шампиньоны, помидоры, сыр моцарелла</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 999₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza-50/karnoval.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Карнавал</h3>
+                                <p class="text"><b>Варадеро:</b> Фарш, маринованный огурчик, маринованный лук, помидор, сыр Моцарелла, кетчуп, соус горчичный<br><b>Партизан:</b> Пепперони, помидоры, соус неаполитано, сыр моцарелла</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1350₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza-50/kubinskaya.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Кубинская</h3>
+                                <p class="text"><b>Жульен:</b> Жареные шампиньоны, жареный лук, копченое куриное филе, сыр Моцарелла, сливочный соус<br><b>Куба:</b> Колбаски кабаносси, помидоры, шампиньоны, свинина, ветчина, соус тар-тар, сыр моцарелла</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1099₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/pizza-50/santyago.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Сантьяго</h3>
+                                <p class="text"><b>Гуантанамо</b>  Колбаски кабаносси, помидоры, соус острый, лук маринованный, куриное филе, перчик халапеньо, сыр моцарелла<br><b>Кастро</b> Колбаски кабаносси, помидоры, шампиньоны, куриное филе, соус барбекю, сыр моцарелла</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1350₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="roll">
+            <div class="container">
+                <div class="menu__row row">
+                    <div class="menu__title">
+                        <h2 class="title">Роллы</h2>
+                        <div class="menu__title-line"></div>
+                        <div class="swiper-btn">
+                            <button class="swiper-btn-prev">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.5L8.16667 15.5M1.5 8.5L8.16667 1.5M1.5 8.5H25.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-btn-next">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.5 8.5L18.8333 1.5M25.5 8.5L18.8333 15.5M25.5 8.5H1.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/roll/tartarlososspajsi.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Тар-тар лосось спайси</h3>
+                                <p class="text">Лосось, масага красная, нори, огурец, рис, спайси соус, сыр креметта .</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">595₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="set">
+            <div class="container">
+                <div class="menu__row row">
+                    <div class="menu__title">
+                        <h2 class="title">Пицца</h2>
+                        <div class="menu__title-line"></div>
+                        <div class="swiper-btn">
+                            <button class="swiper-btn-prev">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.5L8.16667 15.5M1.5 8.5L8.16667 1.5M1.5 8.5H25.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-btn-next">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.5 8.5L18.8333 1.5M25.5 8.5L18.8333 15.5M25.5 8.5H1.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="pasta">
+            <div class="container">
+                <div class="menu__row row">
+                    <div class="menu__title">
+                        <h2 class="title">Пицца</h2>
+                        <div class="menu__title-line"></div>
+                        <div class="swiper-btn">
+                            <button class="swiper-btn-prev">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.5L8.16667 15.5M1.5 8.5L8.16667 1.5M1.5 8.5H25.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-btn-next">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.5 8.5L18.8333 1.5M25.5 8.5L18.8333 15.5M25.5 8.5H1.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="snack">
+            <div class="container">
+                <div class="menu__row row">
+                    <div class="menu__title">
+                        <h2 class="title">Пицца</h2>
+                        <div class="menu__title-line"></div>
+                        <div class="swiper-btn">
+                            <button class="swiper-btn-prev">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.5L8.16667 15.5M1.5 8.5L8.16667 1.5M1.5 8.5H25.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-btn-next">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.5 8.5L18.8333 1.5M25.5 8.5L18.8333 15.5M25.5 8.5H1.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="salad">
+            <div class="container">
+                <div class="menu__row row">
+                    <div class="menu__title">
+                        <h2 class="title">Пицца</h2>
+                        <div class="menu__title-line"></div>
+                        <div class="swiper-btn">
+                            <button class="swiper-btn-prev">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.5L8.16667 15.5M1.5 8.5L8.16667 1.5M1.5 8.5H25.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-btn-next">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.5 8.5L18.8333 1.5M25.5 8.5L18.8333 15.5M25.5 8.5H1.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="dessert">
+            <div class="container">
+                <div class="menu__row row">
+                    <div class="menu__title">
+                        <h2 class="title">Пицца</h2>
+                        <div class="menu__title-line"></div>
+                        <div class="swiper-btn">
+                            <button class="swiper-btn-prev">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.5L8.16667 15.5M1.5 8.5L8.16667 1.5M1.5 8.5H25.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-btn-next">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.5 8.5L18.8333 1.5M25.5 8.5L18.8333 15.5M25.5 8.5H1.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="drink">
+            <div class="container">
+                <div class="menu__row row">
+                    <div class="menu__title">
+                        <h2 class="title">Пицца</h2>
+                        <div class="menu__title-line"></div>
+                        <div class="swiper-btn">
+                            <button class="swiper-btn-prev">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 8.5L8.16667 15.5M1.5 8.5L8.16667 1.5M1.5 8.5H25.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="swiper-btn-next">
+                                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.5 8.5L18.8333 1.5M25.5 8.5L18.8333 15.5M25.5 8.5H1.5" stroke="#131B2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper menu__swiper">
+                        <div class="swiper-wrapper">
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide menu__item">
+                                <div class="menu__item-img">
+                                    <img src="assets/image/test.png" alt="">
+                                </div>
+                                <h3 class="subtitle">Пепперони</h3>
+                                <p class="text">Пепперони, помидоры, соус неаполитано, сыр моцарелла.</p>
+                                <div class="menu__buttons">
+                                    <p class="subtitle menu__price">от 1000₽</p>
+                                    <div class="menu__button"><span class="text">Выбрать</span></div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
