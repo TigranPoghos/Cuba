@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if (sections.length && filterLinks.length) {
         const setActiveLink = (id) => {
         filterLinks.forEach((link) => {
-            const isActive = link.getAttribute('href') === `#${id}`;
+            const isActive = link.getAttribute('href') === `/#${id}`;
             link.classList.toggle('active', isActive);
 
             if (isActive) {
