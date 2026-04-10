@@ -759,3 +759,224 @@ body.hidden {
   text-decoration-skip-ink: none;
   color: var(--pink);
 }
+
+.contact {
+  position: relative;
+  margin-top: 24px;
+  padding-bottom: 96px;
+  overflow: hidden;
+}
+.contact__row {
+  flex-direction: column;
+}
+.contact__title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.contact__title h1 {
+  flex-shrink: 0;
+}
+.contact__title-line {
+  width: 100%;
+  height: 1px;
+  background: var(--blackblue);
+}
+.contact__info {
+  position: relative;
+  border-radius: 20px;
+  background-color: var(--blackblue);
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+.contact__info-text {
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--white);
+}
+.contact__info-text span:last-child {
+  margin-top: 32px;
+}
+.contact__info-text a {
+  color: var(--white);
+}
+.contact__leaf-left {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  max-width: 186px;
+}
+.contact__leaf-right {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  max-width: 186px;
+  transform: rotateY(180deg);
+}
+.contact__bottom {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 16px;
+}
+.contact__bottom-leaf {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.contact__bottom-left {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 457px;
+  border-radius: 20px;
+  background-color: var(--blackblue);
+  padding: 24px 26px;
+}
+.contact__bottom-left .text {
+  color: var(--white);
+}
+.contact__bottom-left .subtitle {
+  color: var(--white);
+}
+.contact__bottom-middle {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 26px;
+  gap: 24px;
+  background: var(--blackblue);
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+.contact__bottom-middle h2 {
+  color: var(--white);
+}
+.contact__bottom-middle .text {
+  color: var(--white);
+}
+.contact__bottom-right {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blackblue);
+  border-radius: 20px;
+  padding: 24px 30px;
+  width: 100%;
+}
+.contact__bottom-right .text {
+  color: var(--white);
+}
+.contact__social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.contact__social-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background: var(--white);
+  border-radius: 20px;
+}
+.contact__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.contact__address {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+}
+.contact__address-right {
+  display: flex;
+  flex-direction: column;
+}
+.contact__address-right span {
+  margin-bottom: 4px;
+}
+.contact__address-right button {
+  text-align: start;
+}
+.contact__more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.contact__more a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #af3a3a;
+}
+.contact__more:last-child {
+  margin-bottom: 0;
+}
+.contact__more-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__back-left {
+  position: absolute;
+  left: 0;
+  bottom: -275px;
+}
+.contact__back-right {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+
+.promotion {
+  margin-top: 24px;
+  padding-bottom: 96px;
+  position: relative;
+}
+.promotion__row {
+  flex-direction: column;
+}
+.promotion__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.promotion__wrapper .menu__item {
+  width: calc(33% - 11px);
+  align-items: start;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+}
+.promotion__wrapper .menu__item .text {
+  font-size: 16px;
+}
+.promotion__wrapper .menu__item .subtitle {
+  text-align: left;
+}
+.promotion__leaf-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.promotion__leaf-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
