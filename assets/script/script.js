@@ -3,20 +3,34 @@ document.addEventListener("DOMContentLoaded", function(){
     //sliders
     const sliderSections = document.querySelectorAll('.menu');
     if (sliderSections.length) {
-    sliderSections.forEach((section) => {
-        const slider = section.querySelector('.menu__swiper');
-        const nextBtn = section.querySelector('.swiper-btn-next');
-        const prevBtn = section.querySelector('.swiper-btn-prev');
-        if (!slider) return;
-        new Swiper(slider, {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            navigation: nextBtn && prevBtn ? {
-                nextEl: nextBtn,
-                prevEl: prevBtn,
-            } : undefined,
+        sliderSections.forEach((section) => {
+            const slider = section.querySelector('.menu__swiper');
+            const nextBtn = section.querySelector('.swiper-btn-next');
+            const prevBtn = section.querySelector('.swiper-btn-prev');
+            if (!slider) return;
+            new Swiper(slider, {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                navigation: nextBtn && prevBtn ? {
+                    nextEl: nextBtn,
+                    prevEl: prevBtn,
+                } : undefined,
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    480: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
         });
-    });
     }
     
 
@@ -49,6 +63,73 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+
+
+    // often slider
+    const oftenBlock = document.querySelector('.often');
+
+    if (oftenBlock) {
+        const scrollContainer = oftenBlock.querySelector('.often__block');
+        const prevBtn = oftenBlock.querySelector('.swiper-btn-prev');
+        const nextBtn = oftenBlock.querySelector('.swiper-btn-next');
+        const controls = oftenBlock.querySelector('.swiper-btn');
+
+        if (scrollContainer && prevBtn && nextBtn && controls) {
+            const getGap = () => {
+                const styles = window.getComputedStyle(scrollContainer);
+                return parseFloat(styles.columnGap || styles.gap || 0);
+            };
+
+            const getScrollStep = () => {
+                const firstItem = scrollContainer.querySelector('.often__item');
+                if (!firstItem) return 200;
+                return firstItem.offsetWidth + getGap();
+            };
+
+            const updateButtons = () => {
+                const hasOverflow = scrollContainer.scrollWidth > scrollContainer.clientWidth + 1;
+                controls.style.display = hasOverflow ? 'flex' : 'none';
+
+                if (!hasOverflow) {
+                    prevBtn.disabled = true;
+                    nextBtn.disabled = true;
+                    prevBtn.classList.add('swiper-button-disabled');
+                    nextBtn.classList.add('swiper-button-disabled');
+                    return;
+                }
+
+                const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+                const isAtStart = scrollContainer.scrollLeft <= 1;
+                const isAtEnd = scrollContainer.scrollLeft >= maxScrollLeft - 1;
+
+                prevBtn.disabled = isAtStart;
+                nextBtn.disabled = isAtEnd;
+
+                prevBtn.classList.toggle('swiper-button-disabled', isAtStart);
+                nextBtn.classList.toggle('swiper-button-disabled', isAtEnd);
+            };
+
+            prevBtn.addEventListener('click', () => {
+                scrollContainer.scrollBy({
+                    left: -getScrollStep(),
+                    behavior: 'smooth'
+                });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                scrollContainer.scrollBy({
+                    left: getScrollStep(),
+                    behavior: 'smooth'
+                });
+            });
+
+            scrollContainer.addEventListener('scroll', updateButtons);
+            window.addEventListener('resize', updateButtons);
+
+            updateButtons();
+        }
+    }
 
 
 

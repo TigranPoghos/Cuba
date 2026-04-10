@@ -272,6 +272,11 @@ body {
     &__top {
         display: flex;
         justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__right {
+        max-width: 185px;
     }
 
     &__middle {
@@ -285,6 +290,7 @@ body {
 
                 &-circle {
                     background: var(--redcuba);
+                    flex-shrink: 0;
                 }
             }
         }
@@ -455,12 +461,16 @@ body {
     }
 }
 
+.swiper-btn-prev:disabled,
+.swiper-btn-next:disabled {
+    opacity: 0.35;
+    pointer-events: none;
+}
+
 .often {
-    margin-bottom: 48px;
-    margin-top: 24px;
+    margin: 24px 0;
 
     &__row {
-        gap: 24px;
         flex-direction: column;
     }
 
@@ -478,9 +488,19 @@ body {
 
     &__block {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 25px;
+        padding: 24px 0;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__item {
@@ -490,7 +510,7 @@ body {
         border-radius: 20px;
         background: var(--white);
         padding: 8px;
-        width: calc(25% - 12px);
+        flex: 0 0 auto;
 
         &:hover {
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.29), 0 10px 10px 0 rgba(0, 0, 0, 0.26), 0 23px 14px 0 rgba(0, 0, 0, 0.15), 0 41px 16px 0 rgba(0, 0, 0, 0.04), 0 63px 18px 0 rgba(0, 0, 0, 0.01);
@@ -505,6 +525,7 @@ body {
             flex-direction: column;
             justify-content: space-between;
             padding: 10px 0;
+            max-width: 125px;
 
             & p:last-child {
                 font-weight: 600;
@@ -597,12 +618,14 @@ body {
         position: absolute;
         left: 0;
         top: 0;
+        z-index: -1;
     }
 
     &__leaf-right {
         position: absolute;
         right: 0;
         top: 0;
+        z-index: -1;
     }
 
     &__row {
@@ -1168,6 +1191,343 @@ body {
             position: absolute;
             right: 0;
             bottom: 0;
+        }
+    }
+}
+
+.mob {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 120px;
+    }
+
+    .header {
+        &__leaf {
+            max-width: 200px;
+            top: -25px;
+        }
+    }
+
+    .promo {
+        &__item {
+            gap: 10px;
+            padding: 20px;
+            width: 520px;
+
+            & .title {
+                line-height: 1;
+            }
+
+            &-img {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .menu {
+        &__leaf {
+            &-right {
+                max-width: 160px;
+            }
+
+            &-left {
+                max-width: 160px;
+            }
+        }
+
+        &__item {
+            padding: 10px;
+
+            & .text {
+                margin: 10px 0;
+            }
+
+            &-img {
+                max-width: 140px;
+                height: 140px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__buttons {
+            & .subtitle {
+                font-size: 16px;
+            }
+        }
+
+        &__button {
+            padding: 10px;
+        }
+    }
+
+    #pizza {
+        & .menu__leaf-right {
+            max-width: 100px;
+        }
+    }
+
+    .footer {
+        &__bottom {
+            & iframe {
+                height: 300px;
+            }
+        }
+
+        &__row {
+            padding: 30px 0;
+            gap: 30px;
+        }
+
+        &__right {
+            max-width: 120px;
+        }
+
+        &__middle {
+            gap: 20px;
+
+            & .header {
+                &__about {
+                    &-circle {
+                        width: 40px;
+                        height: 40px;
+
+                        & svg {
+                            max-width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .promotion {
+        &__leaf {
+            &-left {
+                max-width: 160px;
+            }
+
+            &-right {
+                max-width: 160px;
+            }
+        }
+    }
+
+    .contact {
+        &__info {
+            &-text {
+                max-width: 400px;
+            }
+        }
+
+        &__bottom {
+            &-leaf {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 60px;
+    }
+
+    .filters {
+        &.is-stuck {
+            padding: 15px 0;
+        }
+
+        &__buttons {
+            margin-right: 20px;
+            gap: 10px;
+
+            & svg {
+                max-width: 15px;
+            }
+        }
+
+        &__basket {
+            padding: 5px 10px;
+            margin-left: 20px;
+
+            &-price {
+                font-size: 14px;
+            }
+
+            &-line {
+                width: 1px;
+            }
+
+            & svg {
+                max-width: 20px;
+            }
+        }
+
+        &__menu {
+            gap: 5px;
+
+            &-item {
+                padding: 5px 10px;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .header {
+        &__logo {
+            max-width: 100px;
+        }
+
+        &__bottom {
+            padding: 10px 0;
+        }
+
+        &__leaf {
+            max-width: 140px;
+        }
+
+        &__about {
+            &-subtitle {
+                font-size: 16px;
+            }
+
+            &-circle {
+                width: 40px;
+                height: 40px;
+
+                & svg {
+                    max-width: 20px;
+                }
+            }
+        }
+    }
+
+    .often {
+        margin: 12px 0;
+
+        &__block {
+            padding: 12px 0;
+        }
+    }
+
+    .promo {
+        margin-bottom: 24px;
+    }
+
+    .menu {
+        margin-bottom: 20px;
+        scroll-margin-top: 80px;
+
+        &__swiper {
+            padding: 10px 10px 20px 10px !important;
+        }
+
+        &__row {
+            gap: 12px;
+        }
+
+        &__leaf {
+            &-right {
+                max-width: 120px;
+            }
+
+            &-left {
+                max-width: 120px;
+            }
+        }
+    }
+
+    .footer {
+        &__left {
+            gap: 20px;
+        }
+
+        &__top {
+            position: relative;
+        }
+
+        &__middle {
+            order: 3;
+            margin-top: 20px;
+        }
+
+        &__address {
+            order: 2;
+        }
+
+        &__right {
+            max-width: 100px;
+            position: absolute;
+            right: 0;
+        }
+
+        &__bottom {
+            & iframe {
+                height: 250px;
+            }
+        }
+    }
+
+    .promotion {
+        padding-bottom: 60px;
+
+        &__leaf {
+            &-right {
+                max-width: 120px;
+            }
+
+            &-left {
+                max-width: 120px;
+            }
+        }
+    }
+
+    #pizza .menu__leaf-right {
+        max-width: 80px;
+    }
+
+    .contact {
+        &__bottom {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 10px;
+            row-gap: 10px;
+
+            &-right {
+                grid-column: 1 / span 2;
+            }
+
+            &-left {
+                max-width: none;
+            }
+
+            &-leaf {
+                display: block;
+            }
+        }
+
+        &__leaf {
+            &-right {
+                max-width: 150px;
+            }
+
+            &-left {
+                max-width: 150px;
+            }
+        }
+
+        &__back {
+            &-left {
+                bottom: -100px;
+                max-width: 200px;
+            }
+
+            &-right {
+                max-width: 80px;
+            }
         }
     }
 }
