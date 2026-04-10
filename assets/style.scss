@@ -1867,6 +1867,10 @@ body {
                 display: none;
             }
         }
+
+        &__block {
+            gap: 10px;
+        }
     }
 
     .promo {

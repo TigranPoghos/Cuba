@@ -1476,6 +1476,9 @@ body.hidden {
   .often__title-line {
     display: none;
   }
+  .often__block {
+    gap: 10px;
+  }
   .promo__item {
     width: 270px;
     flex-direction: column-reverse;
