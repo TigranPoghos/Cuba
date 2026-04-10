@@ -32,13 +32,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     //basket
     (function basketToggleModule() {
-        const basketBtn = document.querySelector('.filters__basket');
+        const basketBtns = document.querySelectorAll('.basketJS');
         const basket = document.querySelector('.basket');
         const overlay = document.querySelector('.opacite');
         const body = document.body;
 
-        // если чего-то нет — просто выходим
-        if (!basketBtn || !basket || !overlay || !body) return;
+        if (!basketBtns.length || !basket || !overlay) return;
 
         const CLASS_ACTIVE = 'active';
         const CLASS_HIDDEN = 'hidden';
@@ -55,19 +54,24 @@ document.addEventListener("DOMContentLoaded", function(){
             body.classList.remove(CLASS_HIDDEN);
         }
 
-        // открыть корзину
-        basketBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            openBasket();
+        basketBtns.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openBasket();
+            });
         });
 
-        // закрытие по overlay
         overlay.addEventListener('click', closeBasket);
 
-        // закрытие по кнопке внутри корзины (если есть)
         basket.addEventListener('click', (e) => {
             if (e.target.closest('.basket__close')) {
-            closeBasket();
+                closeBasket();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeBasket();
             }
         });
     })();

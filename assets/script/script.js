@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // often slider
     const oftenBlock = document.querySelector('.often');
-
     if (oftenBlock) {
         const scrollContainer = oftenBlock.querySelector('.often__block');
         const prevBtn = oftenBlock.querySelector('.swiper-btn-prev');
@@ -132,6 +131,50 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
 
+
+
+
+
+    const burger = document.querySelector('.burger');
+    const openBtn = document.querySelector('.burger__button');
+    const closeBtn = document.querySelector('.burger__close');
+    const overlay = document.querySelector('.opacite');
+    const body = document.body;
+
+    if (burger && openBtn && closeBtn && overlay) {
+
+        const openMenu = () => {
+            burger.classList.add('active');
+            overlay.classList.add('active');
+            body.classList.add('hidden');
+        };
+
+        const closeMenu = () => {
+            burger.classList.remove('active');
+            overlay.classList.remove('active');
+            body.classList.remove('hidden');
+        };
+
+        // открыть
+        openBtn.addEventListener('click', openMenu);
+
+        // закрыть по крестику
+        closeBtn.addEventListener('click', closeMenu);
+
+        // клик вне бургера (по оверлею)
+        overlay.addEventListener('click', closeMenu);
+
+        // клик вне .burger (на всякий случай)
+        document.addEventListener('click', (e) => {
+            if (
+                burger.classList.contains('active') &&
+                !burger.contains(e.target) &&
+                !openBtn.contains(e.target)
+            ) {
+                closeMenu();
+            }
+        });
+    }
 
 
 })
