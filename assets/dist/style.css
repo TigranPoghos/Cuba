@@ -426,6 +426,7 @@ body.hidden {
   background: var(--white);
   padding: 8px;
   flex: 0 0 auto;
+  position: relative;
 }
 .often__item:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.29), 0 10px 10px 0 rgba(0, 0, 0, 0.26), 0 23px 14px 0 rgba(0, 0, 0, 0.15), 0 41px 16px 0 rgba(0, 0, 0, 0.04), 0 63px 18px 0 rgba(0, 0, 0, 0.01);
@@ -1090,6 +1091,147 @@ body.hidden {
   font-size: 20px;
 }
 
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 530px;
+  border-radius: 20px;
+  background: var(--white);
+  z-index: 1000;
+  display: flex;
+  width: max-content;
+  display: none;
+}
+.card.active {
+  display: flex;
+}
+.card__img {
+  max-width: 531px;
+  padding: 20px;
+}
+.card__extra {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.card__content {
+  max-width: 426px;
+  padding: 32px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.card__content-info {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--blackblue);
+}
+.card__content-info-light {
+  opacity: 0.56;
+  margin-bottom: 5px;
+}
+.card__content-sizes {
+  display: flex;
+  margin-top: 5px;
+  background: #ebebeb;
+  border-radius: 10px;
+  padding: 4px;
+  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card__content-sizes button {
+  padding: 8px 14px;
+  border-radius: 10px;
+}
+.card__content-type {
+  display: flex;
+  margin-top: 5px;
+  background: #ebebeb;
+  border-radius: 10px;
+  padding: 4px;
+  gap: 5px;
+  justify-content: space-between;
+}
+.card__content-type button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-align: center;
+  width: calc(50% - 10px);
+}
+.card__content-extra {
+  display: flex;
+  margin-top: 5px;
+  background: #ebebeb;
+  border-radius: 10px;
+  padding: 4px;
+  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card__content-extra button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-align: center;
+  width: calc(50% - 10px);
+}
+.card__content-add {
+  background: #131b2d;
+  width: 100%;
+  padding: 16px 32px;
+  color: var(--white);
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.card__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.card__option {
+  display: flex;
+  margin-top: 5px;
+  background: #ebebeb;
+  border-radius: 10px;
+  padding: 4px;
+  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card__option button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-align: center;
+  width: calc(50% - 10px);
+}
+
+.option-group {
+  position: relative;
+}
+
+.option-group .option-highlight {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13), 0 2px 1px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, width 0.25s ease, height 0.25s ease, opacity 0.2s;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.option-group button {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  flex-shrink: 0;
+}
+
 @media (max-width: 1440px) {
   .container {
     padding: 0 120px;
@@ -1307,6 +1449,11 @@ body.hidden {
   .contact__back-right {
     max-width: 80px;
   }
+  .card__img {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1467,6 +1614,43 @@ body.hidden {
   }
   .contact .footer__bottom {
     order: 0;
+  }
+  .card {
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+  }
+  .card__img {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    max-height: 200px;
+    justify-content: center;
+  }
+  .card__img img {
+    height: 100%;
+  }
+  .card .text {
+    font-size: 14px;
+  }
+  .card__option button {
+    padding: 4px 8px;
+  }
+  .card__content {
+    max-width: 100%;
+    padding: 0 10px 20px 10px;
+  }
+  .card__content-sizes button {
+    padding: 4px 8px;
+  }
+  .card__content-type button {
+    padding: 4px 8px;
+  }
+  .card__content-extra button {
+    padding: 4px 8px;
+  }
+  .card__content-info {
+    font-size: 14px;
   }
 }
 @media (max-width: 576px) {
