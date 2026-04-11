@@ -1314,7 +1314,7 @@ body {
     height: 530px;
     border-radius: 20px;
     background: var(--white);
-    z-index: 1000;
+    z-index: 100000;
     display: flex;
     width: max-content;
     display: none;
@@ -1365,6 +1365,7 @@ body {
             & button {
                 padding: 8px 14px;
                 border-radius: 10px;
+                width: calc(25% - 4px);
             }
         }
 
@@ -2030,6 +2031,11 @@ body {
         flex-direction: column;
         height: 90%;
         width: 90%;
+        border-radius: 15px;
+
+        &__extra {
+            max-height: 170px;
+        }
 
         &__img {
             max-width: 100%;
@@ -2055,7 +2061,13 @@ body {
 
         &__content {
             max-width: 100%;
-            padding: 0 10px 20px 10px;
+            height: 100%;
+            padding: 0 10px 10px 10px;
+            justify-content: space-between;
+
+            &-add {
+                margin-top: 20px;
+            }
 
             &-sizes {
                 & button {

@@ -1099,7 +1099,7 @@ body.hidden {
   height: 530px;
   border-radius: 20px;
   background: var(--white);
-  z-index: 1000;
+  z-index: 100000;
   display: flex;
   width: max-content;
   display: none;
@@ -1145,6 +1145,7 @@ body.hidden {
 .card__content-sizes button {
   padding: 8px 14px;
   border-radius: 10px;
+  width: calc(25% - 4px);
 }
 .card__content-type {
   display: flex;
@@ -1619,6 +1620,10 @@ body.hidden {
     flex-direction: column;
     height: 90%;
     width: 90%;
+    border-radius: 15px;
+  }
+  .card__extra {
+    max-height: 170px;
   }
   .card__img {
     max-width: 100%;
@@ -1638,7 +1643,12 @@ body.hidden {
   }
   .card__content {
     max-width: 100%;
-    padding: 0 10px 20px 10px;
+    height: 100%;
+    padding: 0 10px 10px 10px;
+    justify-content: space-between;
+  }
+  .card__content-add {
+    margin-top: 20px;
   }
   .card__content-sizes button {
     padding: 4px 8px;
