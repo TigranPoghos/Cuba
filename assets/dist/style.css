@@ -82,11 +82,11 @@ img, svg {
 html,
 body {
   padding: 0;
+  height: 100%;
   margin: 0;
 }
 
 html {
-  height: 100%;
   scrollbar-width: thin;
   scroll-behavior: smooth;
 }
@@ -1208,6 +1208,42 @@ body.hidden {
   width: calc(50% - 10px);
 }
 
+.police {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.police p, .police li, .police span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--blackblue);
+  margin-top: 5px;
+}
+.police .title {
+  margin-bottom: 20px;
+}
+.police .subtitle {
+  margin: 10px 0;
+}
+
+.error {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.error__title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 64px;
+  text-align: center;
+  color: #131b2d;
+}
+.error__img {
+  margin-top: -80px;
+}
+
 .option-group {
   position: relative;
 }
@@ -1466,6 +1502,13 @@ body.hidden {
   .mob {
     display: flex;
   }
+  .error__title {
+    font-size: 40px;
+  }
+  .error__img {
+    max-width: 300px;
+    margin-top: -20px;
+  }
   .header__logo {
     max-width: 50px;
     margin-left: auto;
@@ -1672,6 +1715,12 @@ body.hidden {
   }
   .often__block {
     gap: 10px;
+  }
+  .error__title {
+    font-size: 30px;
+  }
+  .error__img {
+    max-width: 200px;
   }
   .promo__item {
     width: 270px;

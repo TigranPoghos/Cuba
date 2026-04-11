@@ -82,11 +82,11 @@ img, svg {
 html,
 body {
     padding: 0;
+    height: 100%;
     margin: 0;
 }
 
 html {
-    height: 100%;
     scrollbar-width: thin;
     scroll-behavior: smooth;
 }
@@ -1439,6 +1439,47 @@ body {
     }
 }
 
+.police {
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+    & p, li, span {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--blackblue);
+        margin-top: 5px;
+    }
+
+    & .title {
+        margin-bottom: 20px;
+    }
+
+    & .subtitle {
+        margin: 10px 0;
+    }
+}
+
+.error {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 64px;
+        text-align: center;
+        color: #131b2d;
+    }
+
+    &__img {
+        margin-top: -80px;
+    }
+}
+
 .option-group {
     position: relative;
 }
@@ -1821,6 +1862,17 @@ body {
         display: flex;
     }
 
+    .error {
+        &__title {
+            font-size: 40px;
+        }
+
+        &__img {
+            max-width: 300px;
+            margin-top: -20px;
+        }
+    }
+
     .header {
         &__logo {
             max-width: 50px;
@@ -2106,6 +2158,16 @@ body {
 
         &__block {
             gap: 10px;
+        }
+    }
+
+    .error {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__img {
+            max-width: 200px;
         }
     }
 
