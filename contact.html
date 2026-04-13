@@ -566,7 +566,7 @@
                     <span class="price-currency">₽</span>
                 </div>
             </div>
-            <a class="basket__result-button" href="#"><span>К оформлению заказа</span></a>
+            <a class="basket__result-button" href="checkout.html"><span>К оформлению заказа</span></a>
         </div>
     </aside>
     <button class="basket__button basketJS mob">
@@ -575,6 +575,64 @@
             <path d="M29 29C27.8954 29 27 29.8954 27 31C27 32.1046 27.8954 33 29 33C30.1046 33 31 32.1046 31 31C31 29.8954 30.1046 29 29 29ZM29 29H21.2939C20.8329 29 20.6019 29 20.4121 28.918C20.2447 28.8456 20.0994 28.7291 19.9935 28.5805C19.8749 28.414 19.8272 28.1913 19.7327 27.7505L17.2715 16.2646C17.1748 15.8136 17.1259 15.5884 17.0059 15.4199C16.9 15.2713 16.7548 15.1544 16.5873 15.082C16.3975 15 16.1678 15 15.7065 15H15M18 18H30.8732C31.595 18 31.9555 18 32.1978 18.1504C32.41 18.2821 32.5653 18.4886 32.633 18.729C32.7104 19.0034 32.611 19.35 32.411 20.0435L31.0264 24.8435C30.9068 25.2581 30.8469 25.465 30.7256 25.6189C30.6185 25.7547 30.4772 25.861 30.317 25.9263C30.1361 26 29.9211 26 29.4921 26H19.7305M20 33C18.8954 33 18 32.1046 18 31C18 29.8954 18.8954 29 20 29C21.1046 29 22 29.8954 22 31C22 32.1046 21.1046 33 20 33Z" stroke="#131B2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
     </button>
+    <article class="card">
+        <button class="card__close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 13L7.00002 7.00002M7.00002 7.00002L1 1M7.00002 7.00002L13 1M7.00002 7.00002L1 13" stroke="#131B2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="card__img"><img src="assets/image/pizza/partizan-01.png" alt=""></div>
+        <div class="card__content">
+            <h3 class="title">Партизан</h3>
+            <p class="card__content-info card__content-info-light">35см, тридиционное тесто 35, 870г</p>
+            <div class="card__content-info">Свиная шейка , томаты , красный лук , сладкий перец , моцарелла, соус сацебели, фирменный томатный соус</div>
+            <div class="card__extra">
+                <div class="card__content-sizes option-group" data-option="size">
+                    <span class="option-highlight"></span>
+                    <button class="text active" type="button" aria-pressed="true" data-border-price="80" data-size="25" data-price="480">25см</button>
+                    <button class="text" type="button" aria-pressed="false" data-border-price="80" data-size="33" data-price="680">33см</button>
+                    <button class="text" type="button" aria-pressed="false" data-border-price="80" data-size="40" data-price="880">40см</button>
+                    <button class="text" type="button" aria-pressed="false" data-border-price="0" data-size="50" data-price="1080">50см</button>
+                </div>
+                <div class="card__content-type option-group" data-option="type">
+                    <span class="option-highlight"></span>
+                    <button class="text active" aria-pressed="true" data-type="traditional" type="button">Традиционное</button>
+                    <button class="text" aria-pressed="false" data-type="thin" type="button">Тонкое</button>
+                </div>
+                <div class="card__content-extra option-group" data-option="extra" data-allow-empty="true">
+                    <span class="option-highlight"></span>
+                    <button class="text" data-extra="cheese-border" data-price="80" aria-pressed="false" type="button"><span>Сырный +80<span>₽</span></span></button>
+                    <button class="text" data-extra="sausage-border" data-price="80" aria-pressed="false" type="button"><span>Колбасный +80<span>₽</span></span></button>
+                </div>
+                <div class="card__option option-group" data-option="taste" data-allow-empty="true">
+                    <span class="option-highlight"></span>
+                    <button class="text" type="button" data-taste="cheese" data-price="50">Сырный</button>
+                    <button class="text" type="button" data-taste="garlic" data-price="50">Чесночный</button>
+                    <button class="text" type="button" data-taste="bbq" data-price="50">Барбекю</button>
+                    <button class="text" type="button" data-taste="sweet-sour" data-price="50">Кисло-сладкий</button>
+                </div>
+                <div class="card__option option-group" data-option="volume">
+                    <span class="option-highlight"></span>
+                    <button class="text" type="button" data-volume="0.5">0.5 л</button>
+                    <button class="text" type="button" data-volume="0.9">0.9 л</button>
+                    <button class="text" type="button" data-volume="1">1 л</button>
+                    <button class="text" type="button" data-volume="2">2 л</button>
+                </div>
+                <div class="card__option option-group" data-option="juice-taste">
+                    <span class="option-highlight"></span>
+                    <button class="text" type="button" aria-pressed="false" data-taste="pineapple">Ананас</button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="orange">Апельсин</button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="cherry">Вишня</button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="multifruit">Мультифрукт</button>
+                    <button class="text" type="button" aria-pressed="false" data-taste="apple">Яблоко</button>
+                </div>
+            </div>
+            <button class="card__content-add text">
+                <span>В корзину за</span>
+                <span>480<span>₽</span></span>
+            </button>
+        </div>
+    </article>
     <footer class="footer">
         <div class="container">
             <div class="footer__row row">
@@ -653,5 +711,6 @@
     <script src="assets/script/script.js"></script>
     <script src="assets/script/basket.js"></script>
     <script src="assets/script/filters.js"></script>
+    <script src="assets/script/card.js"></script>
 </body>
 </html>
