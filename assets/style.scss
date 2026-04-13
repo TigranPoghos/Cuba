@@ -1450,7 +1450,7 @@ body {
     }
 }
 
-.police {
+.policy {
     margin-bottom: 40px;
     margin-top: 20px;
 
@@ -1893,6 +1893,12 @@ body {
         }
     }
 
+    #drink {
+        .menu__leaf-right {
+            max-width: 100px;
+        }
+    }
+
     .footer {
         &__bottom {
             & iframe {
@@ -2113,6 +2119,12 @@ body {
         max-width: 80px;
     }
 
+    #drink {
+        .menu__leaf-right {
+            max-width: 80px;
+        }
+    }
+    
     .contact {
         &__bottom {
             display: grid;

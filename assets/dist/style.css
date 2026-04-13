@@ -1253,21 +1253,21 @@ body.hidden {
   width: calc(50% - 10px);
 }
 
-.police {
+.policy {
   margin-bottom: 40px;
   margin-top: 20px;
 }
-.police p, .police li, .police span {
+.policy p, .policy li, .policy span {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   color: var(--blackblue);
   margin-top: 5px;
 }
-.police .title {
+.policy .title {
   margin-bottom: 20px;
 }
-.police .subtitle {
+.policy .subtitle {
   margin: 10px 0;
 }
 
@@ -1615,6 +1615,9 @@ body.hidden {
   #pizza .menu__leaf-right {
     max-width: 100px;
   }
+  #drink .menu__leaf-right {
+    max-width: 100px;
+  }
   .footer__bottom iframe {
     height: 300px;
   }
@@ -1757,6 +1760,9 @@ body.hidden {
     max-width: 120px;
   }
   #pizza .menu__leaf-right {
+    max-width: 80px;
+  }
+  #drink .menu__leaf-right {
     max-width: 80px;
   }
   .contact__bottom {
